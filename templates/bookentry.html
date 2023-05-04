@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Book Entry Form</h2>
+<form action = "" method = "post">
+    {% csrf_token %}
+    {{form }}
+    <input type="submit" value=Submit">
+</form>
+{% endblock %}
